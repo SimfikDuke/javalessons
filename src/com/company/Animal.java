@@ -10,7 +10,7 @@ public class Animal {
     public Animal(){}
     public String info(){
         String result = "";
-        if(this.name.equals("Default")){
+        if(!this.name.equals("Default")){
             result += "Моё имя " + this.name + ". ";
         }
         result += "Мой вес " + this.weight + " кг. ";
