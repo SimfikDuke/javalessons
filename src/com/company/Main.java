@@ -8,9 +8,12 @@ public class Main {
         //System.console().readLine();
         Scanner sc = new Scanner(System.in);
         String s = sc.next();
-        Animal garfield = new Animal("Garfield", 15);
-        System.out.println(garfield.info());
-        Cat sharik = new Cat("Sharik", "siberian", 7);
-        System.out.println(sharik.info());
+        Animal[] animals = new Animal[]{
+                new Bear("Gosha", "brown", 125,12),
+                new Cat("Garfield", "siberian", 15)
+        };
+        for(int i = 0; i < animals.length; i++){
+            System.out.println(animals[i].info());
+        }
     }
 }
