@@ -6,6 +6,8 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Go?");
         //System.console().readLine();
+        FirstGUI animalGUI = new FirstGUI();
+        animalGUI.setVisible(true);
         Scanner sc = new Scanner(System.in);
         String s = sc.next();
         Animal[] animals = new Animal[]{
